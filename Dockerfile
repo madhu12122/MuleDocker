@@ -21,5 +21,5 @@ WORKDIR /opt/mule
 
 CMD ["opt/mule/bin/mule"]
 
-#define http port
+#define http port on which the docker image has to be run
 EXPOSE 8089
