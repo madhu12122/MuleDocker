@@ -6,7 +6,7 @@ RUN cd ~ && wget https://muledeployments.blob.core.windows.net/mule-deployments/
 RUN cd ~ && wget https://muledeployments.blob.core.windows.net/mule-deployments/employee-api.jar
 
 RUN apt-get install unzip
-RUN cd /opt && unzip ~/mule-ee-standalone-4.3.0.zip && rm ~/mule-ee-standalone-4.3.0.zip && ln -s /opt/mule-ee-standalone-4.3.0 /opt/mule-ee-standalone-4.3.0
+RUN cd /opt && unzip ~/mule-ee-standalone-4.3.0.zip && rm ~/mule-ee-standalone-4.3.0.zip && ln -s /opt/mule-ee-standalone-4.3.0 /opt/mule
 RUN chmod -R 777 /opt/mule-ee-standalone-4.3.0
 RUN cp ~/employee-api.jar /opt/mule/apps
 
