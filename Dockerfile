@@ -14,12 +14,12 @@ RUN cp ~/employee-api.jar /opt/mule/apps
 ENV MULE_HOME /opt/mule
 
 #Define mount points
-VOLUME ["opt/mule/logs"]
+VOLUME ["/opt/mule/logs"]
 
 #Define working directory
 WORKDIR /opt/mule
 
-CMD ["opt/mule/bin/mule"]
+CMD ["/opt/mule/bin/mule"]
 
 #define http port on which the docker image has to be run
 EXPOSE 8081
